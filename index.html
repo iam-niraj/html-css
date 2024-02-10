@@ -5,41 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My ffirst page</title>
     <style>
-      ul {
-        list-style-type: none;
+      table,
+      td,
+      th {
+        border: 1px solid gray;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+
+      tfoot {
+        text-align: left;
       }
     </style>
   </head>
 
   <body>
-    <dl>
-      <dt>Title</dt>
-      <dd>Html Css Course</dd>
-      <dt>Author</dt>
-      <dd>Niraj@Albus</dd>
-      <dt>Skills</dt>
-      <dd>Html</dd>
-      <dd>Css</dd>
-      <dd>JS</dd>
-    </dl>
-
-    <!-- <ol>
-      <li>Ingredieents</li>
-      <li>Prepare</li>
-      <li>Cook</li>
-    </ol> -->
-
-    <!-- <ul>
-      <li>About me</li>
-      <li>
-        Courses
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-        </ul>
-      </li>
-      <li>Contact</li>
-    </ul> -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shopping</td>
+          <td>100$</td>
+        </tr>
+        <tr>
+          <td>Bill</td>
+          <td>200$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>300$</th>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
