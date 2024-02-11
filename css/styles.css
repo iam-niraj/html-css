@@ -2,29 +2,28 @@ body {
     margin: 10px;
 }
 
-p {
-    color: brown;
-}
-
-/* article :first-child {
-    font-size: 140%;
-    font-style: italic;
+/* p::first-letter {
+    font-weight: bold;
 } */
 
-article :last-child {
+/* p::first-line {
     font-weight: bold;
+} */
+
+/* p::selection {
+    background-color: rebeccapurple;
+} */
+
+::selection {
+    background-color: aquamarine;
 }
 
-ul :nth-child(3n) {
-    color: deeppink;
+p::before {
+    content: "...";
+    display: block;
 }
 
-a:visited,
-a:link {
-    color: green;
-}
-
-a:hover,
-a:focus {
-    color: blueviolet;
+p::after {
+    content: "..";
+    display: block
 }
