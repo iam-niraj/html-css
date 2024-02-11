@@ -6,19 +6,25 @@ p {
     color: brown;
 }
 
-/* all p inside section #product>p {
-    color: orange;
+/* article :first-child {
+    font-size: 140%;
+    font-style: italic;
 } */
 
-/* first child #product>p {
-    color: orange;
-} */
+article :last-child {
+    font-weight: bold;
+}
 
-/* direct sibling #product+p {
-    color: orange;
-} */
+ul :nth-child(3n) {
+    color: deeppink;
+}
 
-/* all direct siblings */
-#product~p {
-    color: orange;
+a:visited,
+a:link {
+    color: green;
+}
+
+a:hover,
+a:focus {
+    color: blueviolet;
 }
