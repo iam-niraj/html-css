@@ -6,6 +6,19 @@ p {
     color: brown;
 }
 
-a[href^="https"][href$=".com"] {
+/* all p inside section #product>p {
+    color: orange;
+} */
+
+/* first child #product>p {
+    color: orange;
+} */
+
+/* direct sibling #product+p {
+    color: orange;
+} */
+
+/* all direct siblings */
+#product~p {
     color: orange;
 }
