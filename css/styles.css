@@ -1,20 +1,12 @@
-*,
-*::before,
-*::before {
-    box-sizing: border-box;
-}
-
 body {
     margin: 10px;
 }
 
-.box::before {
-    content: "hemlo";
-}
-
-.box {
-    background: tomato;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+.box,
+p {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    color: aqua;
+    overflow: hidden auto;
 }
