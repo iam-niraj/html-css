@@ -6,6 +6,7 @@ body {
 
 .boxes {
     border: 3px solid lightgray;
+    position: relative;
 }
 
 .box {
@@ -19,9 +20,11 @@ body {
 
 .box-2 {
     background-color: tomato;
-    position: relative;
-    top: -5rem;
-    z-index: -1;
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
 }
 
 .box-3 {
