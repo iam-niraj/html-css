@@ -1,22 +1,20 @@
+*,
+*::before,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     margin: 10px;
 }
 
-.my-table,
-td,
-th {
-    border-top: 1px solid #c4dcf3;
-    border-bottom: 1px solid #c4dcf3;
-    border-collapse: collapse;
-    padding: 5px;
-    text-align: left;
+.box::before {
+    content: "hemlo";
 }
 
-thead,
-tfoot {
-    background-color: #427fef;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #eef7ff;
+.box {
+    background: tomato;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
