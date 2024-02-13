@@ -6,7 +6,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: 100px auto 100px / 100px 30fr 70fr;
+    grid-template: 100px auto 100px / 30fr 70fr;
     border: 3px solid lightgray;
     height: 100vh;
     /* row-gap: 10px;
@@ -16,4 +16,23 @@ body {
 
 .box {
     background-color: gold;
+}
+
+.box-1 {
+    /* grid-column: 2; move to other cell */
+
+    /* occupy 2 columns */
+    /* grid-column: 1 / 3; */
+
+    /* span no of columns */
+    grid-column: 1 / span 2;
+
+    /* move to specified row */
+    /* grid-row: 2 */
+
+    /* take no of specified rows */
+    /* grid-row: 2 / 4; */
+
+    /* take no of specified rows */
+    grid-row: 1 / span 2;
 }
