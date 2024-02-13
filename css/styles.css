@@ -18,12 +18,10 @@ body {
     height: 5rem;
     width: 5rem;
     margin: 1rem;
+    flex-basis: 5rem;
+    flex-shrink: 0;
 }
 
 .box1 {
-    align-self: flex-start;
+    flex-shrink: 1
 }
-
-/* .container :first-child {
-    align-self: flex-start;
-} */
