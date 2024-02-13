@@ -5,23 +5,19 @@ body {
 }
 
 .container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 100px);
     border: 3px solid lightgray;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    height: 90vh;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
 }
 
 .box {
-    background-color: gold;
+    width: 15rem;
     height: 5rem;
-    width: 5rem;
-    margin: 1rem;
-    flex-basis: 5rem;
-    flex-shrink: 0;
-}
-
-.box1 {
-    flex-shrink: 1
+    background-color: gold;
 }
