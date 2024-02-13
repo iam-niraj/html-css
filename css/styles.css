@@ -9,9 +9,8 @@ body {
     grid-template: 100px auto 100px / 30fr 70fr;
     border: 3px solid lightgray;
     height: 100vh;
-    /* row-gap: 10px;
-    column-gap: 10px; */
     gap: 10px;
+    grid-template-areas: "header header" "sidebar main" "footer1 footer2";
 }
 
 .box {
@@ -19,20 +18,9 @@ body {
 }
 
 .box-1 {
-    /* grid-column: 2; move to other cell */
+    grid-area: header;
+}
 
-    /* occupy 2 columns */
-    /* grid-column: 1 / 3; */
-
-    /* span no of columns */
-    grid-column: 1 / span 2;
-
-    /* move to specified row */
-    /* grid-row: 2 */
-
-    /* take no of specified rows */
-    /* grid-row: 2 / 4; */
-
-    /* take no of specified rows */
-    grid-row: 1 / span 2;
+.box-2 {
+    grid-area: footer1;
 }
