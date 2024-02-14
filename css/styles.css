@@ -5,22 +5,31 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template: 100px auto 100px / 30fr 70fr;
-    border: 3px solid lightgray;
-    height: 100vh;
-    gap: 10px;
-    grid-template-areas: "header header" "sidebar main" "footer1 footer2";
+    display: flex;
+    flex-direction: column;
 }
 
 .box {
     background-color: gold;
+    padding: 1rem;
 }
 
-.box-1 {
-    grid-area: header;
+.box:nth-of-type(2) {
+    background-color: dodgerblue;
 }
 
-.box-2 {
-    grid-area: footer1;
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    .box {
+        background: white;
+    }
 }
